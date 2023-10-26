@@ -1,4 +1,5 @@
 ; Ender 3 Custom Start G-code
+M42 P57 S200
 G92 E0 ; Reset Extruder
 G28 ; Home all axes
 G29 ; BLTouch
@@ -20,4 +21,6 @@ M140 S0
 G92 E1
 G1 E-1 F300
 G28 X0 Y0
+M109 R60
+M42 P57 S0
 M84
